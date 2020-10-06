@@ -63,8 +63,9 @@ selectTopic = st.selectbox("Select a topic of your interest",
 
 st.sidebar.header("Welcome to Ricardo's Web Application")
 
-image0 = Image.open('u2aimg1.jpg')
+image0 = Image.open('images/u2aimg2.jpg')
 image2 = Image.open('images/rate1.jpg')
+st.image(image0, caption="City Clip-Art", use_column_width=True)
 
 optionsRate = ""
 while optionsRate == "":
