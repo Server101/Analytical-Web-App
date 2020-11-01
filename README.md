@@ -1,5 +1,5 @@
 # Analytical-Web-App
-This app uses the Top Stories API to Display the most common words used in the top current articles based on a specific topic selected by the user. The data is displayed as a line chart and as a wordcloud image hosting on streamlit.
+This app uses the Top Stories API from the New York Times to Display the most common words used in the top current articles based on a specific topic selected by the user. The data is displayed as a line chart and as a wordcloud image hosting on streamlit.
 To run the application in Python enviornment type command in terminal: streamlit run main.py
 
 Total packages used:
