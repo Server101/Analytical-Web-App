@@ -20,22 +20,9 @@ from PIL import Image
 import datetime
 
 
-#import seaborn as sns
-#from typing import List
-#from string import digits
 
-#
 # Developer Name: Ricardo Brown
-# Class: COP 4813 Professor Reis
 # Project 1
-# Due 10/05/2020
-#
-#Image sources: https://www.vectorstock.com/royalty-free-vector/global-network-
-#Image Source: https://questionpro.com/blog/rating-scale
-
-#These are database, only download 1 time
-#nltk.download("punkt")
-#nltk.download("stopwords")
 
 
 #Streamlit Apllication UI
@@ -183,18 +170,7 @@ def save_to_file(data,file_name):
     with open(file_name, "w") as write_file:
         json.dump(data,write_file,indent=2, )
         print("You sucessfully saved to {}.".format(file_name))
-#for w in myData:
-#   if w not in myData:
-#       s = s.replace(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)
-#       newWords.append(w)
-#Began printing most common used words here after taking out the garbage
-#fdist3 = FreqDist(clean_words)
-#def remove(list):
-#    remove_digits = str.maketrans('', '', digits)
-#    list = [i.translate(remove_digits) for i in list]
-#list = ['4geeks', '3for','4geeks']
-#print(remove(list))
-#print(list)
+
 
 def remove(list):
     pattern = '[0-9]'
@@ -207,19 +183,7 @@ data_parameters = {
 }
 Chart_data = main_functions.read_from_file("JSON_Files/chartData.json")
 
-#selected_parameters = [data_parameters.get(key) for key in [1]]
-#def selectDataFrame(Chart_data:str, selected_parameters: List[str]):
-#    entire_ds = pd.read_json(Chart_data)
-#    selected_parameters.insert(0, "latitude")
 
-#    try:
-#        partial_ds = entire_ds[selected_parameters]
-#        print("You made data frame parameters sucess")
-#        #partial_ds = partial_ds.rename(columns={"words":"wa", "Count":"ca"})
-#        return partial_ds
-#   except ValueError:
-#        print("Some parameters")#
-#st.write(selected_parameters)
 #Removing numbers from myData Top Common strings
 test_lits = [1, 3 ,4 ,6 ,7]
 remove_list = [3, 6, 1, 2, 4, 5, 7,8 , 9, 0]
